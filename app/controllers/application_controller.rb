@@ -57,5 +57,12 @@ post '/buses' do
     remove.destroy
     remove.to_json
   end
+  patch '/buses/:id' do
+    dataupdate = Bus.find(params[:id])
+    dataupdate.update(
+      insurance: params[:insurance]
+    )
+    dataupdate.to_json
+  end
 end
 
