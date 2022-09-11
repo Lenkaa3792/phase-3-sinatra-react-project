@@ -33,6 +33,15 @@ post '/buses' do
     )
     update.to_json
   end
+   post '/passengers' do
+    update = Passenger.create(
+      phone: params[:phone],
+      name: params[:name],
+      location: params[:location]
+
+    )
+    update.to_json
+  end
 
 end
 
