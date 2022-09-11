@@ -42,6 +42,10 @@ post '/buses' do
     )
     update.to_json
   end
-
+   delete '/buses/:id' do
+    remove = Bus.find(params[:id])
+    remove.destroy
+    remove.to_json
+  end
 end
 
