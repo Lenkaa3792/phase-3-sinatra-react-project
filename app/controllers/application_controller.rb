@@ -47,5 +47,10 @@ post '/buses' do
     remove.destroy
     remove.to_json
   end
+  delete '/passengers/:id' do
+    remove = Passenger.find(params[:id])
+    remove.destroy
+    remove.to_json
+  end
 end
 
