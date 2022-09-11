@@ -14,6 +14,11 @@ class ApplicationController < Sinatra::Base
     routes.to_json(only: [:id, :location, :name])
   end
 
+   get '/passengers' do
+    passengers = Passenger.all
+    passengers.to_json(only: [:id, :phone, :name, :location])
+  end
+
 
 end
 
