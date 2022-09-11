@@ -64,5 +64,15 @@ post '/buses' do
     )
     dataupdate.to_json
   end
+  patch '/routes/:id' do
+    dataupdate = Route.find(params[:id])
+    dataupdate.update(
+      name: params[:name]
+    )
+    dataupdate.to_json
+  end
+  
+
+
 end
 
