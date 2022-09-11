@@ -9,6 +9,11 @@ class ApplicationController < Sinatra::Base
     buses = Bus.all
     buses.to_json(only: [:id, :insurance, :phone, :vehicle_registration])
   end
+  get '/routes' do
+    routes = Route.all
+    routes.to_json(only: [:id, :location, :name])
+  end
+
 
 end
 
