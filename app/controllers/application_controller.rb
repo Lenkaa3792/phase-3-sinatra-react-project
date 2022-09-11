@@ -5,6 +5,10 @@ class ApplicationController < Sinatra::Base
   get "/" do
     { message: "Good luck with your project!" }.to_json
   end
+  get '/buses' do
+    buses = Bus.all
+    buses.to_json(only: [:id, :insurance, :phone, :vehicle_registration])
+  end
 
 end
 
