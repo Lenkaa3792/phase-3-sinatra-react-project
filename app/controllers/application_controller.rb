@@ -26,6 +26,13 @@ post '/buses' do
     )
     update.to_json
   end
+  post '/routes' do
+    update = Route.create(
+      location: params[:location],
+      name: params[:name]
+    )
+    update.to_json
+  end
 
 end
 
