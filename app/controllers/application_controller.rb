@@ -19,6 +19,13 @@ class ApplicationController < Sinatra::Base
     passengers.to_json(only: [:id, :phone, :name, :location])
   end
 
+post '/buses' do
+    update = Bus.create(
+      insurance: params[:insurance],
+      vehicle_registration: params[:vehicle_registration]
+    )
+    update.to_json
+  end
 
 end
 
