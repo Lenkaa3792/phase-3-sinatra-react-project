@@ -8,3 +8,5 @@ This is a backend for a bus service platform
 3. rake server
 # Technology used
 Ruby 
+# deploy
+https://phase-3-sinatra-react-project-ten.vercel.app

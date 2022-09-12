@@ -22,14 +22,18 @@ class ApplicationController < Sinatra::Base
 post '/buses' do
     update = Bus.create(
       insurance: params[:insurance],
+      phone: params[:phone],
       vehicle_registration: params[:vehicle_registration]
     )
+    # puts(Bus.create)
     update.to_json
   end
   post '/routes' do
+    
     update = Route.create(
       location: params[:location],
       name: params[:name]
+     
     )
     update.to_json
   end
