@@ -9,4 +9,4 @@ This is a backend for a bus service platform
 # Technology used
 Ruby 
 # deploy
-https://phase-3-sinatra-react-project-ten.vercel.app
+ https://phase3data.herokuapp.com/
