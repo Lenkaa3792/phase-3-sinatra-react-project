@@ -9,4 +9,4 @@ This is a backend for a bus service platform
 # Technology used
 Ruby 
 # deploy
- https://phase3data.herokuapp.com/
+ https://phase3data.herokuapp.com/buses
